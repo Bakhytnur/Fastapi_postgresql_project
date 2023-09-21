@@ -3,3 +3,8 @@ FastAPI + PostgresSQL (Eric Roby)
 python -m venv env
 ./env/Scripts/activate
 pip install fastapi sqlalchemy psycopg2-binary
+
+
+uvicorn main:app --reload --host 127.0.0.1 --port 8080
+
+http://127.0.0.1:8080/docs
